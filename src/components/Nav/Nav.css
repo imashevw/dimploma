@@ -1,0 +1,26 @@
+.Nav .NavItem {
+    list-style-type: none;   
+}
+.Nav .NavItem a {
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 40px;
+    
+}
+
+.NavItem a:hover {
+    color: tomato;
+    
+    
+}
+.Nav ul {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    
+}
