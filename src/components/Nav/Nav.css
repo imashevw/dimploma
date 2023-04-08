@@ -1,9 +1,16 @@
+
+.Nav {
+    background-color: black;
+    padding-top: 20px;
+
+
+}
 .Nav .NavItem {
     list-style-type: none;   
 }
 .Nav .NavItem a {
     font-weight: 600;
-    color: black;
+    color: white;
     font-size: 20px;
     text-decoration: none;
     margin: 0 auto;
@@ -23,6 +30,5 @@
     margin: 0 auto;
     justify-content: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid black;
-    
+     
 }
