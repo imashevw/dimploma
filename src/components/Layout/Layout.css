@@ -8,7 +8,7 @@
                           "aside main"
                           "footer footer";
     grid-template-columns: 1fr 6fr;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .Layout header {
@@ -16,8 +16,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    background-color: black;
+    background-color: white;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid black;
 }
 .Layout aside {
     grid-area: aside;
