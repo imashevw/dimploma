@@ -1,27 +1,12 @@
-import { getDocs } from "firebase/firestore/lite";
+
 import { NavLink } from "react-router-dom";
-import { categories } from "../../firebase";
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import "./CategoryList.css";
+import { AppContext } from "../../App";
 
 export default function CategoryList() {
-    const [categoryList, setCategoryList] = useState([]);
-
-    useEffect(() => {  
-    getDocs(categories).then((snapshot) => {
-        const newCategoryList = [];
-        snapshot.forEach(doc => {
-            const category = doc.data();
-            category.id = doc.id;
-
-            newCategoryList.push(category);
- 
-        })
-        setCategoryList(newCategoryList);
-    });
-    }, []);
-
-
-    const output = categoryList.map((category) => (
+    const {categories} = useContext(AppContext);
+    const output = categories.map((category) => (
         <li key={category.id}>
             <NavLink to={`/categories/${category.slug}`}>
                 {category.name}
