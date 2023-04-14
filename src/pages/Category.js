@@ -1,19 +1,26 @@
 import { useMatch } from "react-router";
+import NotFound from "./NotFound";
+import { useContext } from "react";
+import { AppContext } from "../App";
+import ProductList from "../components/ProductList/ProductList";
+
 
 export default function Category() {
-    const {params} = useMatch("/categories/:slug");
+  const { params } = useMatch("/categories/:slug");
 
-    const categories = [
-        {id:1, name: "In containers", slug: "in-containers"},
-        {id:2, name: "In cones", slug: "in-cones"},
-        {id:3, name: "Classic", slug: "classic"},
-        {id:4, name: "Fruity", slug: "fruity"},
-    ];
+  const {categories} = useContext(AppContext);
 
-    const category = categories.find((category) => category.slug === params.slug);
-    return (
-        <div className="Category">
-        <h1>{category.name}</h1>
-        </div>
-    )
+  const category = categories.find(
+    (category) => category.slug === params.slug);
+
+  if (!category) {
+    return <NotFound />;
+  }
+  return (
+    <div className="Category">
+      <h1>{category.name}</h1>
+      <ProductList category={category}/>
+    </div>
+  );
 }
+
