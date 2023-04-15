@@ -11,6 +11,18 @@
     max-width: 100%;
     margin: 0 auto;
 }
+@media (max-width: 750px) {
+    .Layout {
+        display: grid;
+        grid-template-areas: "header header"
+                              "aside aside"
+                              "main main"
+                              "footer footer";
+        grid-template-columns: 1fr 6fr;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+  }
 .Layout header {
     grid-area: header;
     display: flex;
