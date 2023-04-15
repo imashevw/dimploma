@@ -4,9 +4,7 @@ export default function Nav(props) {
   return (
     <nav className="Nav">
       <div className="logo">
-        <NavLink to="/">
-            {props.children}
-        </NavLink>
+        <NavLink to="/">{props.children}</NavLink>
       </div>
       <ul>
         <li className="NavItem">

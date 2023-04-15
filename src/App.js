@@ -20,26 +20,33 @@ function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
 
-  useEffect(() => { // выполнить только однажды 
-    getDocs(categoryCollection) // получить категории 
-      .then(({ docs }) => { // когда категории загрузились 
-        setCategories( // обновить состояние 
-          docs.map(doc => ({ // новый массив 
-            ...doc.data(), // из свойств name,slug 
-            id: doc.id // и свойства id 
-          })) 
-        ) 
-      }); 
-      
-      getDocs(productsCollection) // получить категории 
-      .then(({ docs }) => { // когда категории загрузились 
-        setProducts( // обновить состояние 
-          docs.map(doc => ({ // новый массив 
-            ...doc.data(), // из свойств name,slug 
-            id: doc.id // и свойства id 
-          })) 
-        ) 
-      }); 
+  useEffect(() => {
+    // выполнить только однажды
+    getDocs(categoryCollection) // получить категории
+      .then(({ docs }) => {
+        // когда категории загрузились
+        setCategories(
+          // обновить состояние
+          docs.map((doc) => ({
+            // новый массив
+            ...doc.data(), // из свойств name,slug
+            id: doc.id, // и свойства id
+          }))
+        );
+      });
+
+    getDocs(productsCollection) // получить категории
+      .then(({ docs }) => {
+        // когда категории загрузились
+        setProducts(
+          // обновить состояние
+          docs.map((doc) => ({
+            // новый массив
+            ...doc.data(), // из свойств name,slug
+            id: doc.id, // и свойства id
+          }))
+        );
+      });
   }, []);
   return (
     <div className="App">
@@ -51,7 +58,7 @@ function App() {
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/categories/:slug" element={<Category />} />
-            <Route path="/products/:slug" element={<Product/>}/>
+            <Route path="/products/:slug" element={<Product />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
