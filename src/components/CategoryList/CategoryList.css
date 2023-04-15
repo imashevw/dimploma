@@ -1,9 +1,7 @@
 .CategoryList {
   padding: 15px;
   background: white;
-  width: 200px;
-  box-shadow: 2px 2px 8px rgba(23, 22, 22, 0.1);
-  border: 2px solid #d4d5d8;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
   
 }
 .CategoryList h3 {
@@ -17,16 +15,15 @@
   content: "";
   width: 6px;
   height: 6px;
-  background: #6fad8a;
   position: absolute;
   right: 5px;
   bottom: 2px;
-  box-shadow: -8px -8px #6fad8a, 0 -8px #6fad8a, -8px 0 #6fad8a;
+ 
 }
 .CategoryList ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
   border-top: 1px solid rgba(95, 89, 89, 0.67);
 }
 .CategoryList li {
@@ -42,9 +39,8 @@
   transition: 0.3s linear;
 }
 .CategoryList a:after {
-  content: "\f18e";
   font-family:Arial, Helvetica, sans-serif;
-  position: absolute;
+  position: fixed;
   right: 5px;
   color: white;
   transition: 0.2s linear;

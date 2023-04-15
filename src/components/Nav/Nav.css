@@ -1,87 +1,78 @@
-
 .Nav {
-    background-color: white;
-    padding-top: 20px;
-
-
+  background-color: white;
+  padding-top: 20px;
 }
 .Nav .NavItem {
-    list-style-type: none;   
+  list-style-type: none;
 }
 .Nav .NavItem a {
-    font-weight: 600;
-    color: black;
-    transition: 0.3s;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 0 auto;
-    padding: 40px;
-
-    
+  font-weight: 600;
+  color: black;
+  transition: 0.3s;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 40px;
 }
 .NavItem a.active {
-    color: #8f44fd;
+  color: #8f44fd;
 }
 
 .Nav ul {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    padding-bottom: 20px;
-     
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
-  /* ADAPTABILITY */
+/* ADAPTABILITY */
 @media (max-width: 655px) {
-    .Nav .NavItem a {
-        font-weight: 600;
-        color: black;
-        font-size: 20px;
-        margin: 0 auto;
-        padding: 25px;
-    }
-    .Layout header {
-        display: flex;
-    }
-    .NavItem a.active {
-        color: #8f44fd;
-    }
+  .Nav .NavItem a {
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 25px;
   }
-   @media (max-width: 760px) {
-    .Layout header {
-        flex-direction: column; 
-    } 
-
-   } 
-   @media (max-width: 535px) {
-    .Nav .NavItem a {
-        font-weight: 600;
-        color: black;
-        font-size: 18px;
-        margin: 0 auto;
-        padding: 1px;
-
-    }
-    .Layout header {
-        flex-direction: row; 
-    } 
-    .Nav ul {
-        flex-direction: column;
-    }
-    .NavItem a.active {
-        color: #8f44fd;
-    }
-   }
-   @media (max-width: 424px) {
-    .Nav .NavItem a {
-        font-weight: 600;
-        color: black;
-        font-size: 18px;
-        margin: 0 auto;
-        padding: 1px;
-    }
-    .NavItem a.active {
-        color: #8f44fd;
-    }
-    
+  .Layout header {
+    display: flex;
+  }
+  .NavItem a.active {
+    color: #8f44fd;
+  }
+}
+@media (max-width: 760px) {
+  .Layout header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 535px) {
+  .Nav .NavItem a {
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 1px;
+  }
+  .Layout header {
+    flex-direction: row;
+  }
+  .Nav ul {
+    flex-direction: column;
+  }
+  .NavItem a.active {
+    color: #8f44fd;
+  }
+}
+@media (max-width: 424px) {
+  .Nav .NavItem a {
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 1px;
+  }
+  .NavItem a.active {
+    color: #8f44fd;
+  }
 }
