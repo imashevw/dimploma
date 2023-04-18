@@ -45,7 +45,13 @@
   color: white;
   transition: 0.2s linear;
 }
-.CategoryList a:hover {
+.CategoryList a.active {
   background: #b685ff;
   color: #ffffff;
+}
+@media (max-width: 750px) {
+  .CategoryList li {
+    display: flex;
+    position: none;
+  }
 }
