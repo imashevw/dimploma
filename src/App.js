@@ -10,15 +10,23 @@ import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
 import { categoryCollection, productsCollection } from "./firebase";
 import Product from "./pages/Product";
+import Cart from "./pages/Cart";
+
 
 export const AppContext = createContext({
   categories: [],
   products: [],
+
+  // контекст для корзины
+
+  cart: {}, // содержимое корзинки
+  setCart: () => {} // изменить содержимое корзинки
 });
 
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState({}); 
 
   useEffect(() => {
     // выполнить только однажды
@@ -50,10 +58,11 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products }}>
+      <AppContext.Provider value={{ categories, products, cart, setCart }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<Cart/>}/>
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/delivery" element={<Delivery />} />
