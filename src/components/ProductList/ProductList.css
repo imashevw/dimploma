@@ -26,6 +26,7 @@
     max-width: 300px;
     margin-bottom: 10px;
     margin: 0 auto;
+    margin-bottom: 25px;
   }
   
   .Product a {
@@ -35,6 +36,7 @@
     color: #333;
     margin-bottom: 5px;
     text-align: center;
+    height: 60px;
   }
   
   .Product a:hover {
