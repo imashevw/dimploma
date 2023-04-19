@@ -1,19 +1,21 @@
-button {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #d32f2f;
-  }
-  
+.AddToCart {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #252525;
+}
+.AddToCart .AddCard {
+  background-image: linear-gradient(to bottom, #6db8e6, #3a7bbf);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.AddToCart .AddCard:hover {
+    background-color: #133e59;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
