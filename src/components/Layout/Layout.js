@@ -1,3 +1,4 @@
+import Auth from "../Auth/Auth";
 import CartLink from "../CartLink/CartLink";
 import CategoryList from "../CategoryList/CategoryList";
 import Nav from "../Nav/Nav";
@@ -10,6 +11,7 @@ export default function Layout(props) {
                 <Logo />
                <Nav />
                <CartLink/>
+               <Auth />
              </header>
              <aside>
                <CategoryList />
