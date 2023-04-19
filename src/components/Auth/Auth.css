@@ -1,0 +1,21 @@
+.Auth button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+  .Auth button:hover {
+    background-color: #005ca9;
+  }
+  
+  .Auth span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
