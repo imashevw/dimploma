@@ -1,0 +1,46 @@
+/* .OrderForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.OrderForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    }
+    
+    .OrderForm h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    }
+    
+    .OrderForm label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    }
+    
+    .OrderForm input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    
+    .OrderForm button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .OrderForm button:hover {
+    background-color: #3e8e41;
+    }
