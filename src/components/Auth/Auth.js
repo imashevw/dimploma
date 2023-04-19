@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { signIn, signOff } from "../../firebase";
 import { AppContext } from "../../App";
+import "./Auth.css";
 
 export default function Auth() {
   const { user } = useContext(AppContext);
