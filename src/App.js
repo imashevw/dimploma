@@ -7,20 +7,21 @@ import Delivery from "./pages/Delivery";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
-import { getDocs } from "firebase/firestore/lite";
 import {
-  categoryCollection,
   onAuthChange,
-  productsCollection,
+  onCategoriesLoad,
+  onOrdersLoad,
+  onProductsLoad,
 } from "./firebase";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
+import Orders from "./pages/Orders";
 
 export const AppContext = createContext({
   categories: [],
   products: [],
-
+  orders: [],
   // контекст для корзины
 
   cart: {}, // содержимое корзинки
@@ -32,6 +33,7 @@ export const AppContext = createContext({
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  const [orders, setOrders] = useState([]);
   const [cart, setCart] = useState(() => {
     return JSON.parse(localStorage.getItem("cart")) || {};
   });
@@ -43,40 +45,21 @@ function App() {
   }, [cart]);
 
   useEffect(() => {
-    // выполнить только однажды
-    getDocs(categoryCollection) // получить категории
-      .then(({ docs }) => {
-        // когда категории загрузились
-        setCategories(
-          // обновить состояние
-          docs.map((doc) => ({
-            // новый массив
-            ...doc.data(), // из свойств name,slug
-            id: doc.id, // и свойства id
-          }))
-        );
-      });
-
-    getDocs(productsCollection) // получить категории
-      .then(({ docs }) => {
-        // когда категории загрузились
-        setProducts(
-          // обновить состояние
-          docs.map((doc) => ({
-            // новый массив
-            ...doc.data(), // из свойств name,slug
-            id: doc.id, // и свойства id
-          }))
-        );
-      });
+    onCategoriesLoad(setCategories);
+    onProductsLoad(setProducts);
+    onOrdersLoad(setOrders)
     onAuthChange((user) => {
+      if (user) {
+        user.isAdmin = user.email === "imashevbekzat77@gmail.com";
+      }
+
       setUser(user);
     });
   }, []);
   return (
     <div className="App">
       <AppContext.Provider
-        value={{ categories, products, cart, setCart, user }}
+        value={{ categories, products, cart, setCart, user, orders }}
       >
         <Layout>
           <Routes>
@@ -88,6 +71,7 @@ function App() {
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="/products/:slug" element={<Product />} />
             <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/orders" element={<Orders/>}/>
 
             <Route path="*" element={<NotFound />} />
           </Routes>
