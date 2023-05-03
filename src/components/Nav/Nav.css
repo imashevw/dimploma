@@ -76,3 +76,13 @@
     color: #8f44fd;
   }
 }
+@media (max-width: 800px) {
+  .Nav .NavItem {
+    font-weight: 600;
+    color: black;
+    font-size: 16px;
+    margin: 0 auto;
+      
+
+  }
+}
