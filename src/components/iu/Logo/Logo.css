@@ -1,8 +1,10 @@
 .Logo {
   width: 100px;
-  height: 100px;
+
 }
 .Logo img {
   width: 100%;
+  object-fit: cover;
 }
+
 
