@@ -7,6 +7,7 @@ import Logo from "../iu/Logo/Logo";
 import "./Layout.css";
 import NavToggle from "../NavToggle/NavToggle";
 import Drawer from "../Drawer/Drawer";
+import "../../assets/home.jpg";
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
