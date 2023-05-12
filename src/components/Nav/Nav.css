@@ -74,6 +74,7 @@
   }
   .NavItem a.active {
     color: #8f44fd;
+    padding: 10px;
   }
 }
 @media (max-width: 800px) {
@@ -86,6 +87,6 @@
 }
 @media (max-width: 795px) {
   .Nav .NavItem a {
-    padding: 30px;
+    padding: 10px;
   }
 }
