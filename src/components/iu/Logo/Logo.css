@@ -1,6 +1,16 @@
 .Logo {
   width: 100px;
-
+  margin-right: 120px;
+}
+@media screen and (max-width:1080px){
+  .Logo {
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width:950px){
+  .Logo {
+    margin-right: 20px;
+  }
 }
 .Logo img {
   width: 100%;
