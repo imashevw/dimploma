@@ -9,10 +9,10 @@
   font-weight: 600;
   color: black;
   transition: 0.3s;
-  font-size: 20px;
+  font-size: 16px;
   text-decoration: none;
   margin: 0 auto;
-  padding: 40px;
+  padding: 25px;
 }
 .NavItem a.active {
   color: #8f44fd;
