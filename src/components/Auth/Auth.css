@@ -1,8 +1,9 @@
+
 .Auth .sing {
   background-color: #0074d9; 
   border: none; 
   color: white; 
-  padding: 10px 20px; 
+  padding: 5px 10px; 
   text-align: center; 
   text-decoration: none; 
   display: inline-block; 
@@ -17,7 +18,7 @@
 }
 .Auth span {
   display: flex;
-
+  align-items: center;  
 }
 .Auth img {
   display: block;
