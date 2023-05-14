@@ -1,10 +1,10 @@
-import OrderList from "../components/OredeList/OrderList";
+import OrderList from "../components/OrderList/OrderList";
 
 export default function Orders() {
-    return (
-        <div className="Orders">
-            <h1>Orders</h1>
-            <OrderList/>
-        </div>
-    )
+  return (
+    <div className="Orders">
+      <h1>Orders</h1>
+      <OrderList />
+    </div>
+  );
 }
