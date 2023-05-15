@@ -1,4 +1,4 @@
-import backgroundImage from './.././assets/home.jpg';
+import backgroundImage from './.././assets/home.gif';
 
 export default function Home() {
   const styles = {
