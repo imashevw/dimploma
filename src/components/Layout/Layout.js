@@ -8,6 +8,7 @@ import "./Layout.css";
 import NavToggle from "../NavToggle/NavToggle";
 import Drawer from "../Drawer/Drawer";
 import "../../assets/home.jpg";
+import Footer from "../Footer/Footer";
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -21,16 +22,17 @@ export default function Layout(props) {
         <Nav />
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
-        
+
         <CartLink />
         <Auth />
-        
       </header>
       <aside>
         <CategoryList />
       </aside>
       <main>{props.children}</main>
-      <footer>FOOTER</footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
