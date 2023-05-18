@@ -1,0 +1,24 @@
+.Contacts {
+    margin-top: 20px;
+  }
+  
+  .Contacts h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .Contacts p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .Contacts ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .Contacts li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  

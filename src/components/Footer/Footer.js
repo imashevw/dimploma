@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Footer.css"
 
 export default function Footer() {
@@ -7,33 +8,33 @@ export default function Footer() {
         <div className="Footer__column">
           <h3 className="Footer__column-header">About Us</h3>
           <ul className="Footer__column-list">
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><NavLink href="#">Our Story</NavLink></li>
+            <li><NavLink href="#">Our Team</NavLink></li>
+            <li><NavLink href="#">Contact Us</NavLink></li>
           </ul>
         </div>
         <div className="Footer__column">
           <h3 className="Footer__column-header">For Customers</h3>
           <ul className="Footer__column-list">
-            <li><a href="#">Shipping &amp; Delivery</a></li>
-            <li><a href="#">Returns &amp; Exchanges</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><NavLink href="#">Shipping &amp; Delivery</NavLink></li>
+            <li><NavLink href="#">Returns &amp; Exchanges</NavLink></li>
+            <li><NavLink href="#">Privacy Policy</NavLink></li>
           </ul>
         </div>
         <div className="Footer__column">
           <h3 className="Footer__column-header">Shop</h3>
           <ul className="Footer__column-list">
-            <li><a href="#">Women's Clothing</a></li>
-            <li><a href="#">Men's Clothing</a></li>
-            <li><a href="#">Kids' Clothing</a></li>
+            <li><NavLink href="#">Women's Clothing</NavLink></li>
+            <li><NavLink href="#">Men's Clothing</NavLink></li>
+            <li><NavLink href="#">Kids' Clothing</NavLink></li>
           </ul>
         </div>
         <div className="Footer__column">
           <h3 className="Footer__column-header">Follow Us</h3>
           <ul className="Footer__column-list">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li><NavLink href="#">Facebook</NavLink></li>
+            <li><NavLink href="#">Instagram</NavLink></li>
+            <li><NavLink href="#">Twitter</NavLink></li>
           </ul>
         </div>
       </div>
