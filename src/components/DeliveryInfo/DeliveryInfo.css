@@ -1,26 +1,24 @@
 .DeliveryInfo {
-    display: flex;
-    justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 350px;
-  }
-  
-  .DeliveryInfo__card {
-    width: 30%;
-    padding: 24px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .DeliveryInfo__card h3 {
-    font-size: 20px;
-    margin-bottom: 16px;
-  }
-  
-  .DeliveryInfo__card p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+}
+
+.DeliveryInfo__card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.DeliveryInfo__card h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.DeliveryInfo__card p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 0;
+}
