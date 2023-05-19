@@ -1,0 +1,20 @@
+.AboutInfo {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 300px;
+  }
+  
+  .AboutInfo h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .AboutInfo p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
