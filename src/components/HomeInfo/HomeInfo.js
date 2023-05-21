@@ -14,6 +14,7 @@ export default function HomeInfo() {
             </figcaption>
           </figure>
         </div>
+        
         <div class="hover-text-one">
           <figure class="effect-text-four">
             <img src={img2} alt="" />
