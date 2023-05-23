@@ -253,3 +253,10 @@
 	}
 	
 }
+@media (max-width: 450px) {
+	figure.effect-text-four h3::after,
+	figure.effect-text-four p {
+		font-size: 8px;
+	}
+	
+}
