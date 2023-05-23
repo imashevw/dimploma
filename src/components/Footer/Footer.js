@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "./Footer.css"
+import "./Footer.css";
 
 export default function Footer() {
   return (
@@ -24,9 +24,9 @@ export default function Footer() {
         <div className="Footer__column">
           <h3 className="Footer__column-header">Shop</h3>
           <ul className="Footer__column-list">
-            <li><NavLink href="#">Women's Clothing</NavLink></li>
-            <li><NavLink href="#">Men's Clothing</NavLink></li>
-            <li><NavLink href="#">Kids' Clothing</NavLink></li>
+            <li><NavLink href="#">Classic style</NavLink></li>
+            <li><NavLink href="#">Trousers</NavLink></li>
+            <li><NavLink href="#">Hoodie, zips, windbreakers</NavLink></li>
           </ul>
         </div>
         <div className="Footer__column">
